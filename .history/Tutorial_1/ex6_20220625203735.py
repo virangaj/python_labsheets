@@ -1,5 +1,5 @@
 marks = []
-
+grade = []
 # sort the list
 def sortList(list):
    
@@ -72,8 +72,7 @@ def getMarks(marks):
     print("List : {}".format(marks))
     sorted_list = sortList(marks)
     print("Sorted list : {}".format(sorted_list))  
-    generate_them(sorted_list) 
-    grade = ['none'] * len(marks) 
+    generate_them(sorted_list)  
     set_grades(marks, grade)
 
 getMarks(marks)

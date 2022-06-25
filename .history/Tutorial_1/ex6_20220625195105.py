@@ -11,53 +11,14 @@ def sortList(list):
 
 # get total mean median mode
 def generate_them(list):
-    
-    # total
     total = 0
     for i in range(len(list)):
-        total += list[i]   
+        total += list[i]
     print("Total is : {}".format(total))
-    
-    # Mean
     print("Mean is : {}".format(total/len(list)))
-    
-    # Median
     middle = int(len(list)/2)
     median = (list[middle] + list[middle-1])/2
     print("Median is : {} ".format(median))
-
-    count = 0
-    max_count = 0
-    mode = 0
-    for i in range(len(list)):
-        count = 0
-        for j in range(len(list)):
-            if list[i] == list[j]:
-                count += 1
-        if count > max_count:
-            max_count = count
-            mode  = list[i]
-    
-    print("Mode is : {} ".format(mode))
-
-
-
-# get grades
-def set_grades(list, grade):
-
-    for i in range(len(list)):
-        if list[i] >= 80:
-            grade[i] = 'A'
-        elif list[i] >= 60:
-            grade[i] = 'B'
-        elif list[i] >= 50:
-            grade[i] = 'C'
-        elif list[i] >= 30:
-            grade[i] = 'D'
-        else:
-            grade[i] = 'F'
-
-    print(grade)
 
 
 
@@ -72,9 +33,7 @@ def getMarks(marks):
     print("List : {}".format(marks))
     sorted_list = sortList(marks)
     print("Sorted list : {}".format(sorted_list))  
-    generate_them(sorted_list) 
-    grade = ['none'] * len(marks) 
-    set_grades(marks, grade)
+    generate_them(sorted_list)  
 
 getMarks(marks)
 

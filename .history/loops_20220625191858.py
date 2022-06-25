@@ -8,8 +8,8 @@ set_1 = {1, 2, 3}
 
 def forLoop(a):
     print(a)
-    for i, n in enumerate(a):  # enumerate is used to get the index number
-        print(i, n)
+    for i in a:  # enumerate is used to get the index number
+        print(i)
 
 
 def forRange():

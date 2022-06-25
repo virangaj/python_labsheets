@@ -1,5 +1,5 @@
 marks = []
-
+grade = []
 # sort the list
 def sortList(list):
    
@@ -62,7 +62,7 @@ def set_grades(list, grade):
 
 
 # read the data
-def getMarks(marks):
+def setMarks(marks):
     i = 1
     file = open('marks_file.txt', 'r')
     while i <= 10:
@@ -72,9 +72,8 @@ def getMarks(marks):
     print("List : {}".format(marks))
     sorted_list = sortList(marks)
     print("Sorted list : {}".format(sorted_list))  
-    generate_them(sorted_list) 
-    grade = ['none'] * len(marks) 
+    generate_them(sorted_list)  
     set_grades(marks, grade)
 
-getMarks(marks)
+setMarks(marks)
 

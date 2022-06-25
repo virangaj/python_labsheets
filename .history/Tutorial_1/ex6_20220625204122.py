@@ -1,4 +1,4 @@
-marks = []
+
 
 # sort the list
 def sortList(list):
@@ -63,6 +63,7 @@ def set_grades(list, grade):
 
 # read the data
 def getMarks(marks):
+    marks = []
     i = 1
     file = open('marks_file.txt', 'r')
     while i <= 10:

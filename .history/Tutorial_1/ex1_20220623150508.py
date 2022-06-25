@@ -8,6 +8,8 @@ def area_rectangle():
 print('Area of a rectangle : ', area_rectangle())
 
 # Area of a circle
+
+
 def area_circle():
     radius = input('Enter radius : ')
 

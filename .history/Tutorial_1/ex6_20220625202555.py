@@ -1,5 +1,5 @@
 marks = []
-
+grade = []
 # sort the list
 def sortList(list):
    
@@ -42,25 +42,6 @@ def generate_them(list):
 
 
 
-# get grades
-def set_grades(list, grade):
-
-    for i in range(len(list)):
-        if list[i] >= 80:
-            grade[i] = 'A'
-        elif list[i] >= 60:
-            grade[i] = 'B'
-        elif list[i] >= 50:
-            grade[i] = 'C'
-        elif list[i] >= 30:
-            grade[i] = 'D'
-        else:
-            grade[i] = 'F'
-
-    print(grade)
-
-
-
 # read the data
 def getMarks(marks):
     i = 1
@@ -72,9 +53,7 @@ def getMarks(marks):
     print("List : {}".format(marks))
     sorted_list = sortList(marks)
     print("Sorted list : {}".format(sorted_list))  
-    generate_them(sorted_list) 
-    grade = ['none'] * len(marks) 
-    set_grades(marks, grade)
+    generate_them(sorted_list)  
 
 getMarks(marks)
 

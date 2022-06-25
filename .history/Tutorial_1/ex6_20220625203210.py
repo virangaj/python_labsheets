@@ -1,5 +1,5 @@
 marks = []
-
+grade = []
 # sort the list
 def sortList(list):
    
@@ -43,7 +43,7 @@ def generate_them(list):
 
 
 # get grades
-def set_grades(list, grade):
+def get_grades(list, grade):
 
     for i in range(len(list)):
         if list[i] >= 80:
@@ -72,9 +72,8 @@ def getMarks(marks):
     print("List : {}".format(marks))
     sorted_list = sortList(marks)
     print("Sorted list : {}".format(sorted_list))  
-    generate_them(sorted_list) 
-    grade = ['none'] * len(marks) 
-    set_grades(marks, grade)
+    generate_them(sorted_list)  
+    get_grades(marks, grade)
 
 getMarks(marks)
 

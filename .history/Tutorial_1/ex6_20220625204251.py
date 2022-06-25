@@ -70,11 +70,12 @@ def getMarks(marks):
         i += 1
     file.close()
     print("List : {}".format(marks))
+    grade = ['none'] * len(marks) 
+    set_grades(marks, grade)
     sorted_list = sortList(marks)
     print("Sorted list : {}".format(sorted_list))  
     generate_them(sorted_list) 
-    grade = ['none'] * len(marks) 
-    set_grades(marks, grade)
+    
 
 getMarks(marks)
 
