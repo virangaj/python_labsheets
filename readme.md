@@ -13,6 +13,6 @@
     for range
     while
 
-## Labsheet updateed
+## Labsheet updated
 
     Labsheet 1 ----------- 50% completed
