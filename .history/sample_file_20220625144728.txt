@@ -1,0 +1,3 @@
+Hello world.
+This is a sample file used for file reading.
+Don't delete this file
