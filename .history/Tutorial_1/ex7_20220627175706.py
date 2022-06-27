@@ -4,7 +4,6 @@ def getFile():
     content_1 = content.replace(',',' ')
     content_1 = content_1.replace('-', ' ')
     word_list = content_1.split()
-    print(word_list)
     file.close()
     print(len(word_list))
 
