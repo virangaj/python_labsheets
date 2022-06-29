@@ -13,7 +13,7 @@ def forLoop(a):
 
 
 def forRange():
-    for i in range(1, 6):  # (start, stop, step) or (start, stop) method overloading
+    for i in range(1, 6, 1):  # (start, stop, step) or (start, stop) method overloading
         if(i % 2 == 0):
             print('devid by two')
 
