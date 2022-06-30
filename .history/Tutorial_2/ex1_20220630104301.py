@@ -53,13 +53,12 @@ def mattrix_multiply():
                     l += 1  
                 temp.append(total)
             answer.append(temp)
-        time.sleep(3)
         print(answer)
     else:
         print('Mattixies cannot be multiply')
     et = time.time()
 
-    print('Execution time : {}'.format(et-st-3))
+    print('Execution time : {}'.format(et-st))
 
 # generate mattrix using user inputs
 def generate_mattrix():

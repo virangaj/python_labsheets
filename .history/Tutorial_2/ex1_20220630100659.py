@@ -32,34 +32,23 @@ def identity_mattrix():
     
 
 # multiply arrays
-import time
+
 def mattrix_multiply():
     print("------------Create mattrix 1------------")
     array_1 = generate_mattrix()
     print("------------Create mattrix 2------------")
     array_2 = generate_mattrix()
 
-    st = time.time()
     if len(array_1) == len(array_2[0]):
         print('Mattixies can be multiply')
-        answer = []
+        ans = [[0 for x in range(0, len(array_1))] for y in range(0, len(array_2[0]))]
         for i in range(0, len(array_1)):
-            temp = []
             for j in range(0, len(array_2[0])):
-                total = 0
-                l = 0
                 for k in range(0, len(array_1[0])):
-                    total +=  array_1[i][k] * array_2[l][j]
-                    l += 1  
-                temp.append(total)
-            answer.append(temp)
-        time.sleep(3)
-        print(answer)
+                    ans[i][j] +=  array_1[i][k] * array_2[j][k]    
+        print(ans)
     else:
         print('Mattixies cannot be multiply')
-    et = time.time()
-
-    print('Execution time : {}'.format(et-st-3))
 
 # generate mattrix using user inputs
 def generate_mattrix():
@@ -83,4 +72,3 @@ def generate_mattrix():
 # array_2d()
 # identity_mattrix()
 mattrix_multiply()
-

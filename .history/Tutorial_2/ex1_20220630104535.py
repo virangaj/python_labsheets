@@ -59,7 +59,7 @@ def mattrix_multiply():
         print('Mattixies cannot be multiply')
     et = time.time()
 
-    print('Execution time : {}'.format(et-st-3))
+    print('Execution time : {}'.format(et-st))
 
 # generate mattrix using user inputs
 def generate_mattrix():
