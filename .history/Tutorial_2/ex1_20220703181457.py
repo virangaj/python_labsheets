@@ -2,9 +2,6 @@ import random
 import time
 import numpy as np
 
-# Question 1
-
-# a
 # create 2D array
 def array_2d():
     array = [[0 for x in range(5)] for y in range(5)] 
@@ -16,7 +13,7 @@ def array_2d():
 
     print(array)
 
-#  b
+
 # create indentity mattrix
 def identity_mattrix():
     c = int(input("Enter number of column : "))
@@ -35,7 +32,7 @@ def identity_mattrix():
 
     
     
-# c / d
+
 # multiply arrays
 def mattrix_multiply():
     print("------------Create mattrix 1------------")
@@ -82,15 +79,8 @@ def generate_mattrix():
         return array
         
 
-# Question 2
-
-# a 
-def create_numArr():
-    arr = np.zeros(10)
-    print(arr)
 
 
-# convert in to numpy array
 def convert_nparr(arr1, ar22):
     numarr1 = np.array(arr1)
     numarr2 = np.array(ar22)
@@ -105,6 +95,6 @@ def convert_nparr(arr1, ar22):
 
 # array_2d()
 # identity_mattrix()
-# mattrix_multiply()
-create_numArr()
+mattrix_multiply()
+
 

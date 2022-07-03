@@ -87,7 +87,6 @@ def generate_mattrix():
 # a 
 def create_numArr():
     arr = np.zeros(10)
-    print(arr)
 
 
 # convert in to numpy array
@@ -105,6 +104,6 @@ def convert_nparr(arr1, ar22):
 
 # array_2d()
 # identity_mattrix()
-# mattrix_multiply()
-create_numArr()
+mattrix_multiply()
+
 

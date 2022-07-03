@@ -105,6 +105,6 @@ def convert_nparr(arr1, ar22):
 
 # array_2d()
 # identity_mattrix()
-# mattrix_multiply()
+mattrix_multiply()
 create_numArr()
 
