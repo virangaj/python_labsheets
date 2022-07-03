@@ -86,10 +86,11 @@ def generate_mattrix():
 
 # a 
 def create_numArr():
+    '''we can use np.zeros_like() method for that we have to initialize a array with given length'''
     arr = np.zeros(10)
     print(arr)
 
-
+# c d
 # convert in to numpy array
 def convert_nparr(arr1, ar22):
     numarr1 = np.array(arr1)
@@ -102,9 +103,42 @@ def convert_nparr(arr1, ar22):
     print(dotnp)
     print(et-st-3)
 
+    #sustract two arrays
+    arr3 = np.subtract(numarr1,numarr2)
+    print(arr3)
+    
+    #add two arrays
+    arr3 = np.add(numarr1,numarr2)
+    print(arr3)
+
+# e f 
+def array_with_ele():
+    arr = np.array([4,7,9,-1,3,5,8])
+    print('max : {}'.format(np.max(arr)))
+    print('min : {}'.format(np.min(arr)))
+    print('sum : {}'.format(np.sum(arr)))
+    print('Mimimun index : {}'.format(np.argmin(arr)))
+
+# g h i j k i 
+def question_g():
+    array_A = np.arange(5,23,2)
+    array_B = np.linspace(5,9,9)
+    array_C = np.reshape(array_B,(3,3))
+    cos_array = np.cos(array_A)
+    print(array_A)
+    print(array_B)
+    print(array_C)
+    print(cos_array)
+    print(array_A[2:6])
+    print(array_C[1:])
+
+
+
+
 
 # array_2d()
 # identity_mattrix()
 # mattrix_multiply()
-create_numArr()
-
+# create_numArr()
+# array_with_ele()
+question_g()
