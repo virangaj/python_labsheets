@@ -48,8 +48,7 @@ def convert():
     print('mean : ',format(np.mean(arr2)))
     print('median : ',format(np.median(arr2)))
    
-    arr2 = np.identity(3)
-    print(arr2)
+    np.identity(3)
 
 
 
