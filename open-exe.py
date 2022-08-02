@@ -43,6 +43,58 @@ def color_array():
     print(img_2.dtype)
     
 
-readImage()
+
+
+def gray_scale():
+    img_location = 'Tutorial_4\images\meter1.jpg'
+    img = cv2.imread(img_location, cv2.IMREAD_GRAYSCALE) #0
+
+    #method 1
+    not_ = cv2.bitwise_not(img)
+
+    #method 2
+    img4 = img.copy()
+    for i in range(img4.shape[0]):
+        for j in range(img4.shape[1]):
+            img4[i,j] = 255 - img[i,j]
+
+
+    plt.subplot(231)
+    plt.title('original')
+    plt.imshow(img, cmap='Greys_r')
+
+    plt.subplot(232)
+    plt.title('Gray')
+    plt.imshow(not_, cmap='Greys_r')
+
+    plt.subplot(233)
+    plt.title('method')
+    plt.imshow(img4, cmap='Greys_r')
+
+
+    plt.show()
+
+def increase_brightness_gray(value):        
+    img_location = 'Tutorial_4\images\cameraman.tif'
+    img = cv2.imread(img_location, cv2.IMREAD_GRAYSCALE)
+    #cv2.imshow('main', img)
+
+    img2 = img.copy()
+    img2 = cv2.add(img, value)
+
+    plt.subplot(121)
+    plt.title('original')
+    plt.imshow(img, cmap='Greys_r')
+    
+    plt.subplot(122)
+    plt.title('brightness')
+    plt.imshow(img2, cmap='Greys_r')
+
+    plt.show()
+
+
+increase_brightness_gray(80)
+##gray_scale()
+##readImage()
 ##saveImg()
 ##color_array()

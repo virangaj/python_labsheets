@@ -48,6 +48,8 @@
     Changing color space
     Image basic properties
     HSV / HSB
+    Negative Image
+    Change brightness
 
 
 ## Labsheet updated
