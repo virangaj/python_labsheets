@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 img_read = 'ColorChecker.png'
 img_1 = cv2.imread(img_read, cv2.IMREAD_COLOR)
 def readImage():
-    
     img_1 = cv2.imread(img_read, cv2.IMREAD_COLOR)
     img_2 = cv2.cvtColor(img_1, cv2.COLOR_BGR2RGB)
     img_3 = cv2.cvtColor(img_1, cv2.COLOR_BGR2HSV)
@@ -74,8 +73,10 @@ def gray_scale():
 
     plt.show()
 
-def increase_brightness_gray(value):        
+def change_brightness_gray(value):        
     img_location = 'Tutorial_4\images\cameraman.tif'
+    
+    
     img = cv2.imread(img_location, cv2.IMREAD_GRAYSCALE)
     #cv2.imshow('main', img)
 
@@ -93,7 +94,42 @@ def increase_brightness_gray(value):
     plt.show()
 
 
-increase_brightness_gray(80)
+def change_brightness_color(value):
+    img_location = 'Tutorial_4\images\messi5.jpg'
+    img = cv2.imread(img_location, cv2.IMREAD_COLOR)
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+    h,s,v = cv2.split(hsv)
+    #increase britghtness
+
+    print(h)
+    print(s)
+    print(v)
+
+    lim = 255 - value
+    v[v > lim] = 255
+    
+    
+
+    
+    plt.subplot(131)
+    plt.title('original')
+    plt.imshow(img)
+    
+    plt.subplot(132)
+    plt.title('hsv')
+    plt.imshow(hsv)
+
+    plt.subplot(133)
+    plt.title('brightness')
+    plt.imshow(hsv)
+
+    plt.show()
+
+
+
+change_brightness_color(90)
+##change_brightness_gray(-90)
 ##gray_scale()
 ##readImage()
 ##saveImg()
