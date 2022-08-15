@@ -50,16 +50,22 @@
     HSV / HSB
     Negative Image
     Change brightness
-	Contrast Stretching / Normalization
-	Gray-Level Slicing : [Refer this link](https://theailearner.com/2019/01/25/bit-plane-slicing/)
-	Global Thresholding
-	Adaptive Thresholding
-	Otzu’s Thresholding
-	Histogram Equalization
-	Contrast Limited Adaptive Histogram Equalizatio
-	Gamma Correction
-	
-
+    Contrast Stretching / Normalization
+    Gray-Level Slicing : [Refer this link](https://theailearner.com/2019/01/25/bit-plane-slicing/)
+    Global Thresholding
+    Adaptive Thresholding
+    Otzu’s Thresholding
+    Histogram Equalization
+    Contrast Limited Adaptive Histogram Equalizatio
+    Gamma Correction
+    Custom Filter
+    Avaraging Filter
+    Gussain Filter
+    Median Filter
+    Bilateral Filter
+    Sobel Filter
+    Laplacian Filter
+    Unsharp mask
 
 ## Labsheet updated
 
@@ -67,4 +73,5 @@
     Labsheet 2 ----------- 100% Done
     Labsheet 3 ----------- 100% Done
     Labsheet 4 ----------- 100% Done
-	Labsheet 5 ----------- 100% Completed
+    Labsheet 5 ----------- 100% Done
+    Labsheet 6 ----------- 0% Completed
