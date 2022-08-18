@@ -58,14 +58,10 @@
     Histogram Equalization
     Contrast Limited Adaptive Histogram Equalizatio
     Gamma Correction
-    Custom Filter
-    Avaraging Filter
-    Gussain Filter
-    Median Filter
-    Bilateral Filter
-    Sobel Filter
-    Laplacian Filter
+    Custom Filter | Avaraging Filter | Gussain Filter | Median Filter | Bilateral Filter | Sobel Filter | Laplacian Filter
     Unsharp mask
+    Morphological Operations -> Erosion | Dilation | Closing | Opening | Gradiant | Tophat | Blackhat
+    Contours
 
 ## Labsheet updated
 
@@ -74,4 +70,5 @@
     Labsheet 3 ----------- 100% Done
     Labsheet 4 ----------- 100% Done
     Labsheet 5 ----------- 100% Done
-    Labsheet 6 ----------- 0% Completed
+    Labsheet 6 ----------- 100% Done
+    Labsheet 7 ----------- 0% Completed

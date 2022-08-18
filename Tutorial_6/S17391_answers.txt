@@ -1,0 +1,31 @@
+[Q1]
+a)
+np.array([[1,1,1,1,1],
+         [1,1,1,1,1],
+         [1,1,1,1,1],
+         [1,1,1,1,1],
+         [1,1,1,1,1]])/25
+
+
+b) 
+reason for using Odd sized kernel is that all the previous layer pixels would be Symmetric around the Output pixel. Without this symmetry, we will take into consideration the distortion that occurs when using an even-sized kernel across all layers.
+
+--------------------------------------------------------------------------------
+
+[Q2]
+a) In original image there we can observe noice, after using the mean blur it has reduced the noise
+
+---------------------------------------------------------------------------------
+
+[Q3]
+a) noise get reduced when increase the filter size
+
+---------------------------------------------------------------------------------
+
+[Q4]
+a) when using mean filter, the edges are not perfectly visible. but after using the median filter, edges are perfectly visible
+
+---------------------------------------------------------------------------------
+
+[Q5]
+a) when kernel get larger noise get decrease and some edges also faded. but edges of the main circle still visble clearly 
