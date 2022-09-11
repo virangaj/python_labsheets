@@ -73,4 +73,4 @@
     Labsheet 5 ----------- 100% Done
     Labsheet 6 ----------- 100% Done
     Labsheet 7 ----------- 100% Done
-    Labsheet 8 ----------- 0% Complete
+    Labsheet 8 ----------- 100% Done
