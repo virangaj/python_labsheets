@@ -62,6 +62,7 @@
     Unsharp mask
     Morphological Operations -> Erosion | Dilation | Closing | Opening | Gradiant | Tophat | Blackhat
     Contours
+    Watershed algorithm
 
 ## Labsheet updated
 
@@ -71,4 +72,5 @@
     Labsheet 4 ----------- 100% Done
     Labsheet 5 ----------- 100% Done
     Labsheet 6 ----------- 100% Done
-    Labsheet 7 ----------- 0% Completed
+    Labsheet 7 ----------- 100% Done
+    Labsheet 8 ----------- 0% Complete

@@ -26,6 +26,8 @@ closing = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
 img_r = cv2.cvtColor(closing, cv2.COLOR_GRAY2RGB)
 img_2 = img_r.copy()
+
+#detect contours
 contours, hierarchy = cv2.findContours(closing, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
 
